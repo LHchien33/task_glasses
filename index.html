@@ -1,10 +1,38 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined" rel="stylesheet">
+  <!-- css style -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="scroll-to-top"><a href="#">TOP</a></div>
+  <header class="bg-primary header">
+    <div class="container d-flex jcsb aic">
+      <h1><a class="index-logo" href="./index.html">glasses</a></h1>
+      <a class="ham-icon" href="#dropdown">
+        <span class="material-symbols-outlined">menu</span>
+      </a>
+      <ul class="nav nav--active" id="dropdown">
+        <li><a class="nav-link" href="#">系列鏡框</a></li>
+        <li><a class="nav-link" href="#">門市據點</a></li>
+        <li><a class="nav-link" href="#">部落格</a></li>
+        <li><a class="nav-link" href="#">常見問題</a></li>
+      </ul>
+    </div>
+  </header>
+
+  
 <div class="index-banner">
   <div class="container d-flex jce aic">
     <div class="text-end text-primary-darken">
@@ -171,3 +199,47 @@ current: index
 
   </div>
 </div>
+
+  <footer class="bg-primary footer">
+    <div class="container">
+      <!-- top half -->
+      <div class="d-flex jcsb top-half">
+        <!-- left side -->
+        <div>
+          <ul class="footer-nav">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+          </ul>
+          <div class="contactInfo">
+            <a href="tel:+886-800-000-000"><span class="material-symbols-outlined">call</span>0800-000-000</a>
+            <a href="mailto:glasses@business.com"><span class="material-symbols-outlined">mail</span>glasses@business.com</a>
+          </div>
+        </div>
+        <!-- right side -->
+        <div>
+          <ul class="socialMedia-nav">
+            <li><a href="#"><img src="./assets/images/ic-social-fb.png" alt="fb 社群連結"></a></li>
+            <li><a href="#"><img src="./assets/images/ic_social_ig.png" alt="ig 社群連結"></a></li>
+            <li><a href="#"><img src="./assets/images/ic_social_line.png" alt="line 社群連結"></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- bottom half -->
+      <div class="d-flex jcsb bottom-half">
+        <div>Copyright 	&copy; 2020 Glasses.All rights reserved.</div>
+        <div class="policy">
+          <a href="#">隱私權政策</a>
+          <a href="#">服務條款</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
