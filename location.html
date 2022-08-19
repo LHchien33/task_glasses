@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>門市據點</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined" rel="stylesheet">
+  <!-- css style -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- back to top -->
+  <div class="scroll-to-top"><a href="#">TOP</a></div>
+  <header class="bg-primary header">
+    <div class="container d-flex jcsb aic">
+      <!-- logo -->
+      <h2><a class="index-logo" href="./index.html">glasses</a></h2>
+      <!-- hamburger menu -->
+      <a class="ham-icon" href="#header-dropdown">
+        <span class="material-symbols-outlined">menu</span>
+      </a>
+      <!-- main nav -->
+      <ul class="nav nav--active" id="header-dropdown">
+        <li><a class="nav-link" href="./series_optical.html">系列鏡框</a></li>
+        <li><a class="nav-link" href="./location.html">門市據點</a></li>
+        <li><a class="nav-link" href="./blog.html">部落格</a></li>
+        <li><a class="nav-link" href="./faq.html">常見問題</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+  
+<div class="pt-12 pb-10 py-md-10 py-sm-5 mt-10">
+  <div class="container">
+    
+    <h1 class="decorative-title mb-4">門市據點</h1>
+    <!-- region selector -->
+    <div class="d-flex mb-5 mb-sm-3">
+      <label class="me-2 fz-4 fz-sm-2" for="region-select">選擇地區</label>
+      <select class="location-select" name="region" id="region-select">
+        <option value="Taipei">台北市</option>
+        <option value="Taichung">台中市</option>
+        <option value="Kaohsiung">高雄市</option>
+      </select>
+    </div>
+    <!-- store list -->
+    <ul class="row location-card">
+      <li class="col-4 col-md-6 mb-md-3 mb-6 d-flex">
+        <a class="d-flex flex-column hover-enlarge-shadow" href="./location_details.html">
+          <img src="./assets/images/store-1.png" alt="門市圖片">
+          <h3 class="fz-4 py-1 px-3 border">台北中山旗艦店</h3>
+          <div class="py-2 px-3 border flex-grow-1">
+            <p class="mb-1 fz-3"><span class="material-symbols-outlined">call</span>電話：(02)000-1234</p>
+            <p class="mb-1 fz-3"><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+            <p class="fz-3"><span class="material-symbols-outlined">location_on</span>地址：台北市中山區南京東路25巷2-1號</p>
+          </div>
+          <button type="button">詳細資訊</button>
+        </a>
+      </li>
+      <li class="col-4 col-md-6 mb-md-3 mb-6 d-flex">
+        <a class="d-flex flex-column hover-enlarge-shadow" href="./location_details.html">
+          <img src="./assets/images/store-2.png" alt="門市圖片">
+          <h3 class="fz-4 py-1 px-3 border">台北綠園店</h3>
+          <div class="py-2 px-3 border flex-grow-1">
+            <p class="mb-1 fz-3"><span class="material-symbols-outlined">call</span>電話：(02)000-2345</p>
+            <p class="mb-1 fz-3"><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+            <p class="fz-3"><span class="material-symbols-outlined">location_on</span>地址：台北市中正區復興南路 132-1 號</p>
+          </div>
+          <button type="button">詳細資訊</button>
+        </a>
+      </li>
+      <li class="col-4 col-md-6 mb-md-3 mb-6 d-flex">
+        <a class="d-flex flex-column hover-enlarge-shadow" href="./location_details.html">
+          <img src="./assets/images/store-3.png" alt="門市圖片">
+          <h3 class="fz-4 py-1 px-3 border">台中清水旗艦店</h3>
+          <div class="py-2 px-3 border flex-grow-1">
+            <p class="mb-1 fz-3"><span class="material-symbols-outlined">call</span>電話：(02)000-1234</p>
+            <p class="mb-1 fz-3"><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+            <p class="fz-3"><span class="material-symbols-outlined">location_on</span>地址：台中市清水區經南一路 23 號 8 樓</p>
+          </div>
+          <button type="button">詳細資訊</button>
+        </a>
+      </li>
+      <li class="col-4 col-md-6 mb-md-3 d-flex">
+        <a class="d-flex flex-column hover-enlarge-shadow" href="./location_details.html">
+          <img src="./assets/images/store-4.png" alt="門市圖片">
+          <h3 class="fz-4 py-1 px-3 border">高雄中正形象店</h3>
+          <div class="py-2 px-3 border flex-grow-1">
+            <p class="mb-1 fz-3"><span class="material-symbols-outlined">call</span>電話：(07)000-2345</p>
+            <p class="mb-1 fz-3"><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+            <p class="fz-3"><span class="material-symbols-outlined">location_on</span>地址：高雄市苓雅區中正路 38 號 12 樓</p>
+          </div>
+          <button type="button">詳細資訊</button>
+        </a>
+      </li>
+      <li class="col-4 col-md-6 mb-sm-3 d-flex">
+        <a class="d-flex flex-column hover-enlarge-shadow" href="./location_details.html">
+          <img src="./assets/images/store-5.png" alt="門市圖片">
+          <h3 class="fz-4 py-1 px-3 border">高雄夢時代店</h3>
+          <div class="py-2 px-3 border flex-grow-1">
+            <p class="mb-1 fz-3"><span class="material-symbols-outlined">call</span>電話：(07)000-1234</p>
+            <p class="mb-1 fz-3"><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+            <p class="fz-3"><span class="material-symbols-outlined">location_on</span>地址：高雄市前鎮區中華一路 63 號 6 樓</p>
+          </div>
+          <button type="button">詳細資訊</button>
+        </a>
+      </li>
+    </ul>
+    
+  </div>
+
+</div>
+  </main>
+
+  <footer class="bg-primary footer">
+    <div class="container">
+      <!-- top half -->
+      <div class="d-flex jcsb top-half">
+        <!-- left side -->
+        <div>
+          <ul class="footer-nav">
+            <li><a href="./index.html">首頁</a></li>
+            <li><a href="./series_optical.html">系列鏡框</a></li>
+            <li><a href="./location.html">門市據點</a></li>
+            <li><a href="./blog.html">部落格</a></li>
+            <li><a href="./faq.html">常見問題</a></li>
+          </ul>
+          <div class="contactInfo">
+            <a href="tel:+886-800-000-000"><span class="material-symbols-outlined">call</span>0800-000-000</a>
+            <a href="mailto:glasses@business.com"><span class="material-symbols-outlined">mail</span>glasses@business.com</a>
+          </div>
+        </div>
+        <!-- right side -->
+        <div>
+          <ul class="socialMedia-nav">
+            <li><a href="#"><img src="./assets/images/ic-social-fb.png" alt="fb 社群連結"></a></li>
+            <li><a href="#"><img src="./assets/images/ic_social_ig.png" alt="ig 社群連結"></a></li>
+            <li><a href="#"><img src="./assets/images/ic_social_line.png" alt="line 社群連結"></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- bottom half -->
+      <div class="d-flex jcsb bottom-half">
+        <div>Copyright 	&copy; 2020 Glasses.All rights reserved.</div>
+        <div class="policy">
+          <a href="#">隱私權政策</a>
+          <a href="#">服務條款</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
