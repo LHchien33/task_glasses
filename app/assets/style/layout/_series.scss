@@ -1,0 +1,67 @@
+.series-nav{
+  display: flex;
+  &-link{
+    display: block;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: $fz-5;
+    font-weight: $fw-medium;
+    @include bp-tablet{
+      font-size: $fz-4;
+    }
+    @include bp-mobile{
+      font-size: $fz-2;
+    }
+  }
+  .hover-effect{
+    width: 0;
+    height: 8px;
+    background-color: $primary;
+  }
+  .hover-effect--active{
+    width: 100%;
+  }
+  li{
+    width: calc(100% / 3);
+    border: 1px solid $gray-3;
+    & + li{
+      margin-left: -1px;
+    }
+    &:hover{
+      .hover-effect{
+        width: 100%;
+        transition: width .8s;
+      }
+    }
+    
+  }
+}
+
+.series-banner{
+  display: flex;
+  margin-top: 176px;
+  @include bp-tablet{
+    margin-top: 148px;
+  }
+  @include bp-mobile{
+    margin-top: 136px;
+  }
+  & > li{
+    width: 50%;
+    height: 296px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.colorCube{
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+}

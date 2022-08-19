@@ -3,10 +3,17 @@
 @import 'base/base';
 
 @import 'utils/mixins';
+@import 'utils/components';
 @import 'utils/helpers';
 
 @import 'layout/layout';
+@import 'layout/series';
+@import 'layout/location';
+@import 'layout/blog';
+@import 'layout/blog-articles';
 @import 'pages/index';
+@import 'pages/series-optical';
+@import 'pages/series-sunglasses';
 
 // *{
 //     outline: 1px solid black;

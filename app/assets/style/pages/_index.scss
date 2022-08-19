@@ -68,33 +68,52 @@
   }
 }
 
-input, textarea{
-  text-indent: 12px;
-  border-width: 1px;
-  border-color: $base;
-}
-
-textarea{
-  max-height: 136px;
-  line-height: 24px;
-}
-
-input:not([type="checkbox"]){
-  min-height: 36px;
-}
-
-input[type="checkbox"]{
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
-}
-
-input[type="submit"]{
-  border: none;
-  &:hover{
-    background-color: $primary-darken;
+.index-form{
+  max-width: 636px;
+  margin: 0 auto;
+  @include bp-tablet{
+    max-width: 576px;
   }
-  &:active{
-    background-color: $primary-darken;
+  input, textarea{
+    padding-left: 12px;
+    border-width: 1px;
+    border-color: $base;
+  }
+  
+  textarea{
+    max-height: 136px;
+    line-height: 24px;
+  }
+  
+  input:not([type="checkbox"]){
+    min-height: 36px;
+  }
+  
+  input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+  
+  input[type="submit"]{
+    width: 416px;
+    margin: 0 auto;
+    border: none;
+    background-color: $primary;
+    transition: background-color .2s;
+    @include bp-tablet{
+      width: 336px;
+    }
+    @include bp-mobile{
+      width: 100%;
+    }
+    &:hover{
+      background-color: $primary-darken;
+    }
+    &:active{
+      background-color: $primary-darken;
+    }
   }
 }
+
+

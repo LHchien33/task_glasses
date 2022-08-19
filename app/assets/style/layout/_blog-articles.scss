@@ -1,0 +1,24 @@
+
+.tag-icon{
+  font-size: $fz-8;
+  @include bp-tablet{
+    font-size: $fz-4;
+  }
+}
+
+.article-pagi{
+  display: flex;
+  justify-content: space-between;
+  &-link{
+    display: flex;
+    align-items: center;
+    span{
+      & + span{
+        margin-left: 8px;
+      }
+    }
+  }
+  @include bp-mobile{
+    display: none;
+  }
+}

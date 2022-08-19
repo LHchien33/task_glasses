@@ -1,0 +1,49 @@
+---
+title: 台北中山旗艦店 - 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+<div class="pt-12 pb-10 py-md-10 py-sm-5 mt-10">
+  <div class="container">
+    
+    <h1 class="decorative-title mb-4">門市據點</h1>
+    <!-- store selector -->
+    <div class="d-flex mb-5 mb-sm-3">
+      <label class="me-2 fz-4 fz-sm-2" for="sales-select">選擇分店</label>
+      <select class="location-select" name="region" id="slaes-select">
+        <option value="TaipeiZhongShan">台北中山旗艦店</option>
+        <option value="TaipeiGreenPark">台北綠園店</option>
+        <option value="TaichungQingShui">台中清水旗艦店</option>
+        <option value="Kaohsiung
+        ZhongZheng">高雄中正形象店</option>
+        <option value="KaohsiungDreamMall">高雄夢時代店</option>
+      </select>
+    </div>
+    <!-- store details -->
+    <ul class="row location-card">
+      <li class="col-5 col-md-12">
+          <div class="md-row mb-md-3">
+            <div class="col-md-6">
+              <img src="./assets/images/store-1.png" alt="門市圖片">
+            </div>
+            <div class="col-md-6">
+              <h2 class="fz-4 py-1 px-3 border">台北中山旗艦店</h2>
+              <div class="py-2 px-3 border">
+                <a class="d-block mb-1 fz-3 hover-td" href="tel:+886-2-000-1234"><span class="material-symbols-outlined">call</span>電話：(02)000-1234</a>
+                <p class="mb-1 fz-3"><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</p>
+                <p class="fz-3"><span class="material-symbols-outlined">location_on</span>地址：台北市中山區南京東路25巷2-1號</p>
+              </div>
+            </div>
+          </div>
+      </li>
+      <!-- map -->
+      <li class="col-7 col-md-12 mb-sm-3">
+        <img src="./assets/images/store-map.png" alt="地圖">
+      </li>
+    </ul>
+
+
+  </div>
+
+</div>

@@ -1,0 +1,24 @@
+.banner-sunglasses{
+  li{
+    &:first-child{
+      background-image: url(../images/product-header-3.png);
+      @include bp-tablet{
+        background-image: url(../images/product-header-sm-3.png);
+      }
+    }
+    &:last-child{
+      background-image: url(../images/product-header-4.png);
+      @include bp-tablet{
+        background-image: url(../images/product-header-sm-4.png);
+      }
+    }
+  }
+}
+
+.sunglasses-exhibit{
+  @include bp-mobile{
+    li:nth-child(n+6){
+      display: none;
+    }
+  }
+}
